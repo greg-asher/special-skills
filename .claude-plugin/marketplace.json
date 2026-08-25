@@ -1,0 +1,35 @@
+{
+  "name": "special-skills",
+  "owner": {
+    "name": "Greg Asher",
+    "url": "https://github.com/greg-asher"
+  },
+  "metadata": {
+    "description": "Focused agent tools for infrastructure and engineering operations."
+  },
+  "plugins": [
+    {
+      "name": "fly",
+      "source": "./plugins/fly",
+      "description": "Fly Swatter deeply audits Fly.io deployments for drift, waste, recovery gaps, unsafe cleanup candidates, and operational risks.",
+      "author": {
+        "name": "Greg Asher",
+        "url": "https://github.com/greg-asher"
+      },
+      "homepage": "https://github.com/greg-asher/special-skills",
+      "repository": "https://github.com/greg-asher/special-skills",
+      "license": "MIT",
+      "category": "development",
+      "tags": [
+        "fly.io",
+        "flyctl",
+        "deployment-audit",
+        "machines",
+        "cleanup",
+        "backups",
+        "storage",
+        "cost-optimization"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "fly",
+  "version": "0.1.0",
+  "description": "Find and swat Fly.io deployment drift, waste, recovery gaps, unsafe cleanup candidates, and operational risks.",
+  "author": {
+    "name": "Greg Asher",
+    "url": "https://github.com/greg-asher"
+  },
+  "homepage": "https://github.com/greg-asher/special-skills",
+  "repository": "https://github.com/greg-asher/special-skills",
+  "license": "MIT",
+  "keywords": [
+    "fly.io",
+    "flyctl",
+    "deployment-audit",
+    "machines",
+    "cost-optimization",
+    "backup",
+    "storage"
+  ]
+}

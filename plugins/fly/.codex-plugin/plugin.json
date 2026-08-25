@@ -1,0 +1,30 @@
+{
+  "name": "fly",
+  "version": "0.1.0",
+  "description": "Find and swat Fly.io deployment drift, waste, recovery gaps, unsafe cleanup candidates, and operational risks.",
+  "author": {
+    "name": "Greg Asher"
+  },
+  "keywords": [
+    "fly.io",
+    "flyctl",
+    "deployment-audit",
+    "machines",
+    "cost-optimization",
+    "backup",
+    "storage"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Fly Swatter",
+    "shortDescription": "Deep Fly.io deployment and resource analysis",
+    "longDescription": "Reconciles repository configuration, live Fly.io state, control-plane registrations, billing evidence, and current documentation to identify verified issues, fixes, cleanup candidates, resilience gaps, and optimization opportunities.",
+    "developerName": "Greg Asher",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "defaultPrompt": "Use $analyze-fly-deployment to run Fly Swatter against this deployment and prioritize evidence-backed fixes and optimizations."
+  }
+}

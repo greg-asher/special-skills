@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fly Swatter"
+  short_description: "Find and swat Fly.io deployment problems"
+  default_prompt: "Use $analyze-fly-deployment to run Fly Swatter against this Fly.io deployment and prioritize evidence-backed fixes and optimizations."
