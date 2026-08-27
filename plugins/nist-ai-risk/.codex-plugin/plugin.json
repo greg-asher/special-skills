@@ -1,0 +1,30 @@
+{
+  "name": "nist-ai-risk",
+  "version": "0.1.0",
+  "description": "Help developers inspect, discuss, and record project AI risks using NIST AI RMF without introducing release gates.",
+  "author": {
+    "name": "Greg Asher"
+  },
+  "keywords": [
+    "nist",
+    "ai-rmf",
+    "ai-risk",
+    "generative-ai",
+    "risk-record",
+    "developer-tools"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "NIST AI Risk",
+    "shortDescription": "Developer-guided NIST AI risk records",
+    "longDescription": "Uses the NIST AI Risk Management Framework and its Generative AI Profile as an internal lens while helping developers inspect relevant project evidence and maintain one simple root-level .nist risk record. It is advisory and has no compliance, approval, release, or gatekeeping capability.",
+    "developerName": "Greg Asher",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": "Use $manage-ai-risk to examine this project's AI risks and maintain its .nist record."
+  }
+}

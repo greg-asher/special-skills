@@ -1,0 +1,20 @@
+{
+  "name": "nist-ai-risk",
+  "version": "0.1.0",
+  "description": "Help developers inspect, discuss, and record project AI risks using NIST AI RMF without introducing release gates.",
+  "author": {
+    "name": "Greg Asher",
+    "url": "https://github.com/greg-asher"
+  },
+  "homepage": "https://github.com/greg-asher/special-skills",
+  "repository": "https://github.com/greg-asher/special-skills",
+  "license": "MIT",
+  "keywords": [
+    "nist",
+    "ai-rmf",
+    "ai-risk",
+    "generative-ai",
+    "risk-record",
+    "developer-tools"
+  ]
+}

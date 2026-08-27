@@ -25,12 +25,14 @@ Add this repository as a marketplace and install the Fly module:
 ```bash
 codex plugin marketplace add greg-asher/special-skills --ref main
 codex plugin add fly@special-skills
+codex plugin add nist-ai-risk@special-skills
 ```
 
 Run Fly Swatter:
 
 ```text
 $analyze-fly-deployment Deeply audit this Fly.io deployment, focusing on cleanup, backups, storage, reliability, and cost.
+$manage-ai-risk Help me examine this project's AI risks and maintain its .nist record.
 ```
 
 ## Install in Claude Code
@@ -38,12 +40,14 @@ $analyze-fly-deployment Deeply audit this Fly.io deployment, focusing on cleanup
 ```text
 /plugin marketplace add greg-asher/special-skills
 /plugin install fly@special-skills
+/plugin install nist-ai-risk@special-skills
 ```
 
 Run Fly Swatter:
 
 ```text
 /fly:analyze-fly-deployment Deeply audit this Fly.io deployment, focusing on cleanup, backups, storage, reliability, and cost.
+/nist-ai-risk:manage-ai-risk Help me examine this project's AI risks and maintain its .nist record.
 ```
 
 ## Live Fly access
@@ -52,6 +56,12 @@ The plugin does not include credentials. When a user authorizes live inspection,
 
 Authentication failure is reported as an evidence gap—not as proof that no Fly resources exist. Collected configuration may contain internal metadata and should be handled as sensitive evidence.
 
+## NIST AI Risk module: Manage AI Risk
+
+Manage AI Risk is a developer-invoked helper for examining AI-enabled project work and maintaining one living `.nist` Markdown record at the project root. It uses NIST AI RMF Govern, Map, Measure, and Manage as an internal reasoning lens, with the NIST Generative AI Profile applied only when relevant.
+
+The skill inspects only project evidence relevant to the developer's request, supports several AI capabilities in one project, and records concrete risk scenarios without turning the framework into a questionnaire. It has zero gatekeeping capability: no compliance verdicts, release approvals, aggregate scores, blocking behavior, or CI enforcement.
+
 ## Repository layout
 
 ```text
@@ -59,10 +69,14 @@ special-skills/
 ├── .agents/plugins/marketplace.json
 ├── .claude-plugin/marketplace.json
 ├── plugins/
-│   └── fly/
+│   ├── fly/
+│   │   ├── .codex-plugin/plugin.json
+│   │   ├── .claude-plugin/plugin.json
+│   │   └── skills/analyze-fly-deployment/
+│   └── nist-ai-risk/
 │       ├── .codex-plugin/plugin.json
 │       ├── .claude-plugin/plugin.json
-│       └── skills/analyze-fly-deployment/
+│       └── skills/manage-ai-risk/
 └── scripts/validate.py
 ```
 
@@ -76,4 +90,4 @@ python3 scripts/validate.py
 
 ## License
 
-MIT. Fly Swatter is an independent community tool and is not affiliated with or endorsed by Fly.io.
+MIT. Fly Swatter and NIST AI Risk are independent community tools and are not affiliated with or endorsed by Fly.io or NIST.
