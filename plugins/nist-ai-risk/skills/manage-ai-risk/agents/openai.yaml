@@ -1,0 +1,6 @@
+interface:
+  display_name: "Manage AI Risk"
+  short_description: "Developer-guided NIST AI risk record"
+  default_prompt: "Use $manage-ai-risk to examine this project's AI risks and maintain its .nist record."
+policy:
+  allow_implicit_invocation: false

@@ -30,6 +30,27 @@
         "storage",
         "cost-optimization"
       ]
+    },
+    {
+      "name": "nist-ai-risk",
+      "source": "./plugins/nist-ai-risk",
+      "description": "Manage a living project AI risk record with NIST AI RMF guidance and zero gatekeeping behavior.",
+      "author": {
+        "name": "Greg Asher",
+        "url": "https://github.com/greg-asher"
+      },
+      "homepage": "https://github.com/greg-asher/special-skills",
+      "repository": "https://github.com/greg-asher/special-skills",
+      "license": "MIT",
+      "category": "development",
+      "tags": [
+        "nist",
+        "ai-rmf",
+        "ai-risk",
+        "generative-ai",
+        "risk-record",
+        "developer-tools"
+      ]
     }
   ]
 }
